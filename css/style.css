@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.container {
+  margin: 0 auto;
+  width: 1279px;
+  padding: 20px; }
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 100%; }
+
+.serviceCard {
+  overflow: hidden;
+  height: 500px;
+  width: 20%;
+  background-color: black;
+  position: relative;
+  -webkit-transform: skewY(-5deg) rotate(5deg);
+  -ms-transform: skewY(-5deg) rotate(5deg);
+  transform: skewY(-5deg) rotate(5deg);
+  margin-left: -2px; }
+  .serviceCard__header {
+    position: absolute;
+    z-index: 10;
+    color: aliceblue; }
+  .serviceCard::after {
+    background-image: url(../../lxV_bYGKoSo.jpg);
+    background-size: cover;
+    top: -20px;
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 106%;
+    -webkit-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+    transform: skewY(-3deg);
+    -webkit-transform-origin: 100%;
+    -ms-transform-origin: 100%;
+    transform-origin: 100%;
+    background-size: cover;
+    z-index: 1; }
+  .serviceCard--active {
+    width: 500px; }
+  .serviceCard--active.serviceCard:after {
+    background-image: none; }
+  .serviceCard--active .serviceCard__header {
+    display: none; }
