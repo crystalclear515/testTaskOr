@@ -25,13 +25,16 @@
   -webkit-transform: skewY(-5deg) rotate(5deg);
   -ms-transform: skewY(-5deg) rotate(5deg);
   transform: skewY(-5deg) rotate(5deg);
-  margin-left: -2px; }
+  margin-left: -2px;
+  -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .serviceCard__header {
     position: absolute;
     z-index: 10;
     color: aliceblue; }
   .serviceCard::after {
-    background-image: url(../../lxV_bYGKoSo.jpg);
+    background-image: url(../lxV_bYGKoSo.jpg);
     background-size: cover;
     top: -20px;
     left: 0;

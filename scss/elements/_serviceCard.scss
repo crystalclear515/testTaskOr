@@ -12,6 +12,8 @@
   position: relative;
   transform: skewY(-5deg) rotate(5deg);
   margin-left: -2px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 
   &__header{
     position: absolute;
@@ -20,7 +22,7 @@
   }
 
   &::after{
-    background-image: url(../../lxV_bYGKoSo.jpg);
+    background-image: url(../lxV_bYGKoSo.jpg);
     background-size: cover;
     top: -20px;
     left: 0;
@@ -32,6 +34,7 @@
     transform-origin: 100%;
     background-size: cover;
     z-index: 1;
+
   }
 
 
